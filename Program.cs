@@ -6,7 +6,9 @@ namespace NumeralSystems
     {
         public static void Main()
         {
-            Console.WriteLine(GetRadix(10, 8));
+            int number = Convert.ToInt32(Console.ReadLine());
+            int radix = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(GetRadix(number, radix));
         }
 
         public static string GetRadix(this int number, int radix)
